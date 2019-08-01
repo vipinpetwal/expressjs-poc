@@ -17,7 +17,7 @@ app.use(cors());
 
 app.post('/api/v1/login',loginrouter.logincheck)
 app.get('/api/v1/displaydata',loginrouter.displaydata)
-app.post('/api/v1/displayfilelist',searchrouter.displayfilelist)
+app.post('/api/v1/displayfilelist',searchrouter.displayfilelist)  //for search
 
 app.listen(globalconfig.port,globalconfig.ip, () => {
     console.log('listening on port 3001');
